@@ -1,3 +1,4 @@
+from util import formata_numero, porcent
 from typer import Typer
 from rich import print
 from rich.console import Console
@@ -5,28 +6,6 @@ from rich.table import Table
 import yahooquery as yq
 
 app = Typer()
-
-def porcent(valor: float) -> str:
-	return f'{round(valor * 100, 2):.2f}%'
-
-def formata_numero(numero: int | float) -> str:
-	numero = str(int(numero))
-	numero_formatado = []
-	count = 0
-
-	for c in range(len(numero) - 1, -1, -1):
-		numero_formatado.insert(0, numero[c])
-		count += 1
-		if (count % 3 == 0):
-			numero_formatado.insert(0, ' ')
-
-	del numero
-	numero = ''
-
-	for c in numero_formatado:
-		numero += c
-
-	return f'R${numero.strip()}'
 
 @app.command()
 def resumo(ticket: str) -> None:
