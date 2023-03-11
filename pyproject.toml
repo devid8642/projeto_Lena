@@ -9,8 +9,8 @@ packages = [{include = "projeto_lena"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^1.5.3"
-yfinance = "^0.2.12"
 typer = {extras = ["all"], version = "^0.7.0"}
+yahooquery = "^2.3.0"
 
 
 [build-system]
