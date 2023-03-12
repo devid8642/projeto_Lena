@@ -18,6 +18,6 @@ Ou com o poetry:
 A ferramenta trata-se de uma CLI, portanto é preciso tomar ciência de seus comandos, dos argumentos de cada comando e das opções de cada comando também. Segue abaixo a descrição de tais:
 
 ### Comando <i>resumo</i>
-Este comando possui como argumento o ticket de um ativo da B3 e ele retorna uma série de indicadores financeiros desse ativo. A sintaxe do ticket é a seguinte: ticket da b3 + .SA. Exemplo com a Petrobrás: PETR4.SA.
+Este comando possui como argumento o ticket de um ativo da B3 e ele retorna uma série de indicadores financeiros desse ativo. Exemplo com a Petrobrás: PETR4.
 
 ![](assests/demo_resumo.gif)
