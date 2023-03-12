@@ -44,4 +44,8 @@ def resumo(ticket: str) -> None:
 	console = Console()
 	console.print(tabela)
 
+@app.command()
+def comando() -> None:
+	pass
+
 app()
