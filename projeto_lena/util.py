@@ -17,5 +17,8 @@ def formata_numero(numero: int | float) -> str:
 
 	return f'R${numero.strip()}'
 
-def porcent(valor: float) -> str:
+def formata_porcent(valor: float) -> str:
 	return f'{round(valor * 100, 2):.2f}%'
+
+def formata_preco(valor: float) -> str:
+	return f'R${valor:.2f}'
